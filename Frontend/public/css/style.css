@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
 .bg-color {
     background-color: #ff8f1e; 
     height: 100%;
@@ -26,6 +27,48 @@ body, html {
     margin-top: 20px;
 }
 
+.form {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+}
+
+.icon {
+    width: 40px; 
+    height: 40px;
+    margin-right: 0px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
 .popup {
     position: fixed;
     top: 50%;
@@ -38,17 +81,21 @@ body, html {
     display: none;
     z-index: 1000;
 }
+
 .popup.visible {
     display: block;
 }
+
 .popup .close-btn {
     text-align: right;
     cursor: pointer;
     font-weight: bold;
 }
+
 .popup-message {
     margin: 15px 0;
 }
+
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -58,6 +105,7 @@ body, html {
     display: none;
     z-index: 999;
 }
+
 .popup-overlay.visible {
     display: block;
 }
